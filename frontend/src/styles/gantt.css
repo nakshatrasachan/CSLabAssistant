@@ -1,0 +1,44 @@
+.gantt-container {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+  overflow-x: auto;
+  padding-bottom: 40px; /* Reserve space for time labels */
+}
+
+.gantt-block {
+  position: relative;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+  margin-right: 4px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  min-width: 60px;
+}
+
+.gantt-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.gantt-time.start,
+.gantt-time.end {
+  position: absolute;
+  font-size: 12px;
+  color: #000;
+  background: #fff;
+  padding: 2px 4px;
+  border-radius: 4px;
+  top: 100%;
+  transform: translateY(4px);
+}
+
+.gantt-time.start {
+  left: 0;
+}
+
+.gantt-time.end {
+  right: 0;
+}
